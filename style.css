@@ -1,0 +1,513 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #f8f8f8;
+}
+.btn-primary {
+  background-color: #179ddb !important;
+}
+
+/* =================
+Typography
+================= */
+
+h1 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+/* =================
+Layout
+================= */
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background: #f8f8f8;
+  padding: 2em 0;
+}
+
+@media (max-width: 675px) {
+  .container-nav {
+    flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+  }
+}
+
+/* navigation */
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+@media (max-width: 675px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.5em 0;
+  }
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+/* .main {
+  position: relative;
+  max-width: 100rem;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 15rem) auto;
+  gap: 2rem;
+
+  /* NOTE This creates the fade in/out anumation */
+/* opacity: 0; */
+/* transition: all 1s;
+} */
+/* .bal {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.curr-bal {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: -0.2rem;
+  color: #143774;
+} */
+/* .curr-value {
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: #143774;
+}
+/* <!--bal-info--> */
+/* .info {
+  grid-row: 2 / span 3;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+.info-row {
+  padding: 2.25rem 4rem;
+  display: flex;
+  align-items: center; 
+  border-bottom: 1px solid #eee;
+} */
+/* .info-type {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #707070;
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+} */
+/* .bal-date {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #707070;
+}
+.money-val {
+  font-size: 1.7rem;
+  margin-left: auto;
+  color: #707070;
+} */
+
+/* .total {
+  grid: 5/6;
+  display: flex;
+  align-items: baseline;
+  padding: 0 0.3;
+  margin-top: 1rem;
+}
+.total-in {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 0.8rem;
+} */
+/* .total-val {
+  font-size: 2.2rem;
+  margin-right: 2.5rem;
+}
+.total-interest,
+.total-sum {
+  color: #66c873;
+}
+.total-out {
+  color: #f5465d;
+} */
+/* .tosort {
+  margin-left: auto;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.operation {
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  color: #333;
+}
+
+.operation--transfer {
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+} */
+
+/* .operation--loan {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.operation--close {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+} */
+
+/* h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form1 {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.4rem 1rem;
+}
+
+/* Exceptions for interst */
+/* .form.form--loan {
+  grid-template-columns: 2.5fr 1fr 2.5fr;
+}
+.form__label--loan {
+  grid-row: 2;
+} */
+/* End exceptions */
+
+/* .form__input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  padding: 0.3rem 1rem;
+  border-radius: 0.7rem;
+  transition: all 0.3s;
+} */
+
+/* .form__input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.form__label {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.form__btn {
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+} */
+
+/* .form__btn:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+} */
+.main {
+  position: relative;
+  max-width: 100rem;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 15rem) auto;
+  gap: 2rem;
+
+  /* NOTE This creates the fade in/out anumation */
+  opacity: 100;
+  transition: all 1s;
+}
+.username {
+  transition: all 2s;
+}
+.bal {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.current-label {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: -0.2rem;
+}
+.current-bal {
+  font-size: 2rem;
+  color: #143774;
+}
+
+.current-date {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.current-value {
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: #143774;
+}
+
+/* MOVEMENTS */
+.record {
+  grid-row: 2 / span 3;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+
+.record-row {
+  padding: 2.25rem 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.record-type {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+}
+
+.record-date {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #666;
+}
+
+.movements__type--deposit {
+  color: #1792d2;
+}
+
+.movements__type--withdrawal {
+  color: #1792d2;
+}
+
+.record-value {
+  font-size: 1.7rem;
+  margin-left: auto;
+  color: #707070;
+}
+
+/* SUMMARY */
+.summary {
+  grid-row: 5 / 6;
+  display: flex;
+  align-items: baseline;
+  padding: 0 0.3rem;
+  margin-top: 1rem;
+}
+
+.summary__label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 0.8rem;
+}
+
+.summary__value {
+  font-size: 2.2rem;
+  margin-right: 2.5rem;
+}
+
+.summary__value--in,
+.summary__value--interest {
+  color: #143774;
+}
+
+.summary__value--out {
+  color: #143774;
+}
+
+.btn--sort {
+  margin-left: auto;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* OPERATIONS */
+.operation {
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  color: #333;
+}
+
+.operation--transfer {
+  background-color: #1792d2;
+  color: white;
+}
+
+.operation--loan {
+  background-color: #1792d2;
+  color: white;
+}
+
+.operation--close {
+  background-color: #1792d2;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.4rem 1rem;
+}
+
+/* Exceptions for interst */
+.form.form--loan {
+  grid-template-columns: 2.5fr 1fr 2.5fr;
+}
+.form__label--loan {
+  grid-row: 2;
+}
+/* End exceptions */
+
+.form__input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  padding: 0.3rem 1rem;
+  border-radius: 0.7rem;
+  transition: all 0.3s;
+}
+
+.form__input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.form__label {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.form__btn {
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form__btn:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+@media screen and (max-width: 400px) {
+  .current-bal {
+    font-size: 1rem;
+  }
+  .current-date {
+    font-size: 1rem;
+  }
+  .bal {
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: inherit;
+    margin-bottom: 1rem;
+  }
+  .current-value {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #143774;
+    position: relative;
+    left: 2rem;
+    bottom: 1rem;
+  }
+}

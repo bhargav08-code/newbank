@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Dashboard</title>
+  </head>
+  <body
+    class="text-center"
+    data-new-gr-c-s-check-loaded="14.1056.0"
+    data-gr-ext-installed=""
+    cz-shortcut-listen="true"
+  >
+    <header>
+      <div class="container container-nav">
+        <div class="site-title">
+          <h1>American Expresss</h1>
+          <p class="subtitle">“Don't Live Life Without It.”</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Back to Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- / .container -->
+    </header>
+    <main class="form-signin">
+      <form>
+        <h1 class="h3 mb-3 fw-normal">Please Login in</h1>
+
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control login__input--user"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Express Username</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control login__input--pin"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me" /> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary login__btn" type="submit">
+          Login In
+        </button>
+      </form>
+    </main>
+    <h1 class="username"></h1>
+    <main class="main">
+      <!-- BALANCE -->
+      <div class="bal">
+        <div>
+          <p class="current-bal">Current balance</p>
+          <p class="current-date">As of <span class="date">05/03/2037</span></p>
+        </div>
+        <p class="current-value">0000₹</p>
+      </div>
+
+      <!-- record -->
+      <div class="record">
+        <div class="record-row">
+          <div class="record-type movements__type--deposit">2 deposit</div>
+          <div class="record-date"></div>
+          <div class="record-value">100₹</div>
+        </div>
+        <div class="record-row">
+          <div class="record-type movements__type--withdrawal">
+            1 withdrawal
+          </div>
+          <div class="record-date"></div>
+          <div class="record-value">-378₹</div>
+        </div>
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="summary">
+        <p class="summary__label">In</p>
+        <p class="summary__value summary__value--in">0000₹</p>
+        <p class="summary__label">Out</p>
+        <p class="summary__value summary__value--out">0000₹</p>
+        <p class="summary__label">Interest</p>
+        <p class="summary__value summary__value--interest">0000₹</p>
+        <button class="btn--sort">&downarrow; SORT</button>
+      </div>
+
+      <!-- OPERATION: TRANSFERS -->
+      <div class="operation operation--transfer">
+        <h2>Transfer money</h2>
+        <form class="form form--transfer">
+          <input type="text" class="form__input form__input--to" />
+          <input type="number" class="form__input form__input--amount" />
+          <button class="form__btn form__btn--transfer">&#10003;</button>
+          <label class="form__label">Transfer to</label>
+          <label class="form__label">Amount</label>
+        </form>
+      </div>
+
+      <!-- OPERATION: LOAN -->
+      <div class="operation operation--loan">
+        <h2>Request loan</h2>
+        <form class="form form--loan">
+          <input type="number" class="form__input form__input--loan-amount" />
+          <button class="form__btn form__btn--loan">&#10003;</button>
+          <label class="form__label form__label--loan">Amount</label>
+        </form>
+      </div>
+
+      <!-- OPERATION: CLOSE -->
+      <div class="operation operation--close">
+        <h2>Close account</h2>
+        <form class="form form--close">
+          <input type="text" class="form__input form__input--user" />
+          <input
+            type="password"
+            maxlength="6"
+            class="form__input form__input--pin"
+          />
+          <button class="form__btn form__btn--close">&#10003;</button>
+          <label class="form__label">Confirm user</label>
+          <label class="form__label">Confirm PIN</label>
+        </form>
+      </div>
+    </main>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
