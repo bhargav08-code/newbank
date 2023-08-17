@@ -1,7 +1,5 @@
 "use strict";
-document.addEventListener("contextmenu", function (e) {
-  e.preventDefault();
-});
+
 
 const account1 = {
   owner: "Bhargav Garge",
